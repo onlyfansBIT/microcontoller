@@ -1,0 +1,17 @@
+#include<lpc214x.h>
+unsigned int fact(unsigned int n){
+	unsigned int result=1;
+	unsigned int i;
+	for(i=1;i<=n;i++){
+		result *= i;
+	}
+	return result;
+}
+
+int main(void){
+	unsigned int num=5;
+	unsigned int result;
+	
+	result=fact(num);
+	return 0;
+}
